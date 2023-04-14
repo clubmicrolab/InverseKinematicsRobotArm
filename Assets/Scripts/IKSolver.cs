@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO.Ports;
+using System;
+using System.Text;
+using System.Threading.Tasks;
 using static Unity.VisualScripting.Metadata;
 
 public class IKSolver : MonoBehaviour
@@ -8,6 +12,7 @@ public class IKSolver : MonoBehaviour
     [SerializeField] private Vector3 _rotation;
 
     //public Transform Target;
+    //
     public GameObject Parent;
     public GameObject Target;
     public Transform Shoulder;
@@ -36,8 +41,8 @@ public class IKSolver : MonoBehaviour
         {
             // Store each child's position properties into the list
             effectorPositions.Add(child.transform.position);
-            
         }
+
 
     }
 
@@ -48,6 +53,7 @@ public class IKSolver : MonoBehaviour
         Transform[] objectChildren = GetComponentsInChildren<Transform>();
 
         Vector3 targetPosition = Target.transform.position;
+
 
 
         /*
@@ -74,7 +80,7 @@ public class IKSolver : MonoBehaviour
         {
             distances[i] = targetPosition - effectorPositions[i];
         }
-        
+
         // Calculate the angles for each effector using the distances
         for (int i = 0; i < effectorPositions.Length; i++)
         {
@@ -91,4 +97,22 @@ public class IKSolver : MonoBehaviour
         }
 
     }
+}
+
+public class EmptyClass
+{
+
+    public void SendGCode(string command)
+    {
+
+        SerialPort port = new SerialPort("/dev/tty.usbmodem1301", 9600);
+        port.DtrEnable = true;
+        port.Open();
+        System.Threading.Thread.Sleep(1000); //Delay of 1 second
+        port.WriteLine(command);
+
+        port.Close();
+
+    }
+
 }
