@@ -1,14 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO.Ports;
+using System;
+using System.Text;
+using System.Threading.Tasks;
 using static Unity.VisualScripting.Metadata;
 
 public class IKSolver : MonoBehaviour
 {
     [SerializeField] private Vector3 _rotation;
+
     //public Transform Target;
+    //
     public GameObject Parent;
     public GameObject Target;
+    public Transform Shoulder;
+    // Set min and max angles for each bone 
 
     List<Vector3> effectorPositions = new List<Vector3>();
 
@@ -33,8 +41,8 @@ public class IKSolver : MonoBehaviour
         {
             // Store each child's position properties into the list
             effectorPositions.Add(child.transform.position);
-            
         }
+
 
     }
 
@@ -46,18 +54,20 @@ public class IKSolver : MonoBehaviour
 
         Vector3 targetPosition = Target.transform.position;
 
-        //for ( int i = 0; i < 6; i++)
-        //{
-        //    Debug.Log($" Rotation: of {objectChildren[i]}" + rotationProperties[i]);
-        //}
 
+
+        /*
+    
         // Loop through each child and rotate 10 degrees per second on the Y axis
         foreach (Transform child in objectChildren)
         {
+
             child.Rotate(Vector3.left * Time.deltaTime * 10);
-            Debug.Log($"{child.name} position is: {child.transform.position}");
+            Debug.Log($"{child.name} position is: {child.transform.position} and the rotation is {Vector3.left}");
+
         }
 
+        */
     }
 
     // Function to calculate the angles of each effector using Inverse Kinematics
@@ -70,7 +80,7 @@ public class IKSolver : MonoBehaviour
         {
             distances[i] = targetPosition - effectorPositions[i];
         }
-        
+
         // Calculate the angles for each effector using the distances
         for (int i = 0; i < effectorPositions.Length; i++)
         {
@@ -87,4 +97,22 @@ public class IKSolver : MonoBehaviour
         }
 
     }
+}
+
+public class EmptyClass
+{
+
+    public void SendGCode(string command)
+    {
+
+        SerialPort port = new SerialPort("/dev/tty.usbmodem1301", 9600);
+        port.DtrEnable = true;
+        port.Open();
+        System.Threading.Thread.Sleep(1000); //Delay of 1 second
+        port.WriteLine(command);
+
+        port.Close();
+
+    }
+
 }

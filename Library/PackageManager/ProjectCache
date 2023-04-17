@@ -3068,9 +3068,11 @@ m_ResolvedPackages:
     - 1.2.0
     - 1.2.1
     - 1.2.2
+    - 1.2.3
     compatible:
     - 1.2.2
-    verified: 1.2.2
+    - 1.2.3
+    verified: 1.2.3
   dependencies:
   - name: com.unity.test-framework
     version: 1.0.16
