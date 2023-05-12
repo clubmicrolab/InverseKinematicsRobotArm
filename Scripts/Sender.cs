@@ -5,9 +5,7 @@ using System.Threading.Tasks;
 
 
 namespace SerialComm
-
 { 
-
         public class Sender
         {
         public async void SendGCode(SerialPort port, string command)
@@ -15,9 +13,7 @@ namespace SerialComm
             await Task.Delay(100);
             port.WriteLine(command);
             Debug.Log($"Trimitem pe {port} : {command}");
-
         }
-
     }
 }
 
