@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A33045D2-1A1D-48EC-BD9B-73D2DBD89F94}</ProjectGuid>
+    <ProjectGuid>{2174CB39-E6AF-593E-F0AC-8E7CDBA93218}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Unity.PlasticSCM.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,7 +48,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.17</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2021.3.22f1</UnityVersion>
   </PropertyGroup>
@@ -56,74 +56,330 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\ToggleText.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Scripts\Controller.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\Scripts\SwitchHandler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\Scripts\Sender.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Scripts\Dance.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\CameraFollow.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\Scripts\ControlAuto.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\Scripts\ControlManual.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\GetClientDiffInfos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\StatusBar\NotificationBar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\TreeViewItemIds.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Avatar\ApplyCircleMask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\ProgressOperationHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\CreateBranchDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\GuiEnabled.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingMergeLinks\MergeLinkListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DrawTextBlockWithEndLink.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\TableViewOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\HistorySelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\PlasticDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Inspector\DrawInspectorOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\TreeHeaderColumns.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\MeasureMaxWidth.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\ChangesetFromCollabCommitResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\Errors\ErrorListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\ProgressControlsForMigration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\IncomingChangesNotifier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CloudProjectDownloader\CloudProjectDownloader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTab_Operations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\ChangesetsListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\AssetMenuOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\DrawProgressForDialogs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Avatar\AvatarImages.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UnityEvents.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\DirectoryConflicts\DrawDirectoryResolutionPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\CheckinProgress.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\ProgressControlsForViews.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\TeamEdition\TeamEditionConfigurationWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\VCSPlugin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\ToolConfig.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\AutoConfig.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\IncomingChangesNotifier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\GenericProgress.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\IsCollabProjectMigratedResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\HandleMenuItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\ProjectPath.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\DiffSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\ConfigurePartialWorkspace.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\BuildFormattedHelp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\OrganizationCredentials.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\ChangeTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\AssetFilesFilterPatternsMenuBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\LaunchDiffOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\CredentialsResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\AssetsPath.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AutoRefresh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\StatusBar\StatusBar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\HistoryTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UnityConstants.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\SSOSignUpPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\UpdateProgress.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\DownloadPlasticExeWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\GUIActionRunner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\WebRestApiClient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\BoolSetting.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Dialogs\LaunchCheckinConflictsDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\Dialogs\CheckinDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Dialogs\CreateChangelistDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UnityPlasticTimer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\ProjectWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\SortOrderComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\BranchesTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\Processor\AssetModificationProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\TabButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\BranchesListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UIElements\UIElementsExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\EditorDispatcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\OperationProgressData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CollabMigration\MigrationDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UnityThreadWaiter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Message\DrawDialogIcon.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\CreatedOrganizationPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\SetupCloudProjectId.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\UpdateProgress.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticWindow\PlasticSCMWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\DrawProgressForMigration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DrawSearchField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Welcome\DownloadAndInstallOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\DiffPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\ProgressOperationHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Changelists\MoveToChangelistMenuBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\UnityIncomingChangesTree.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\FindWorkspace.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\EditorVersion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\ChangeCategoryTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\BranchesSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\HelpData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\GetPlasticShortcut.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\GUISpace.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Message\PlasticQuestionAlert.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\ChangeTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\BranchListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\ClientDiffTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\UnityPendingChangesTree.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\SceneView\DrawSceneOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticMenuItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Tool\BringWindowToFront.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\FindEditorWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\CreateOrganizationPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\RepaintInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\BranchesViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\DrawAssetOverlay.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CloudProjectDownloader\DownloadRepositoryOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Tool\LaunchTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\Processor\AssetsProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticPluginIsEnabledPreference.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\Cache\SearchLocks.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\SignInPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Avatar\GetAvatar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Dialogs\FilterRulesConfirmationDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Welcome\MacOSConfigWorkaround.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DrawUserIcon.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CredentialsDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\ScreenResolution.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\Cache\BuildPathDictionary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Inspector\InspectorAssetSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoriesListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Tool\ToolConstants.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\Dialogs\RenameBranchDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTreeHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\CreateRepositoryDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\FileSystemOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Images.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\IIncomingChangesTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Tool\IsExeAvailable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\Errors\ErrorsListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\DiffTreeViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticPlugin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\ChangesetsTab_Operations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\EnumPopupSetting.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\CloudEditionWelcomeWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoryListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\HelpPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesTreeHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\DrawCommentTextArea.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesTreeHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\Cache\RemoteStatusCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Dialogs\EmptyCheckinMessageDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\AutoLogin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticProjectSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticApp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\GetRelativePath.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesViewPendingChangeMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UIElements\TabView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\Processor\AssetPostprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\ChangeCategoryTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DrawSplitter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\Cache\AssetStatusCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\HistoryListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\Cache\LocalStatusCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\AssetOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\HistoryListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\ChannelCertificateUiImpl.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\NewIncomingChanges.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\Dialogs\GetRestorePathDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\MetaPath.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\EnumExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DockEditorWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\SwitchModeConfirmationDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\Dialogs\CheckinDialogOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\ChangelistTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\DrawProgressForViews.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\DrawTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UnityMenuItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\OverlayRect.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\ListViewItemIds.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Changelists\ChangelistMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\AssetMenuItems.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\CurrentUserAdminCheckResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\PlasticSplitterGUILayout.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Dialogs\LaunchDependenciesDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\HelpFormat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\HistoryListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\UnityDiffTree.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Dialogs\DependenciesDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\ChangeTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UIElements\LoadingSpinner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\DiffTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\AssetStatus.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\ProjectViewAssetSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\IsCurrent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\RefreshAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\Dialogs\CheckinConflictsDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\DrawHelpPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Diff\MergeCategoryTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UnityPlasticGuiMessage.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\ChangesetsSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\RunModal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\FilesFilterPatternsMenuBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CollabPlugin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\DrawTreeViewEmptyState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\StatusBar\IncomingChangesNotification.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\GetChangesOverlayIcon.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\ChangeCategoryTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\ParentWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\EditorProgressBar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\MissingEncryptionPasswordPromptHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\WaitingSignInPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Welcome\GetInstallerTmpFileName.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticConnectionMonitor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\ChangesetsViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\SaveAction.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\IsResolved.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\Processor\WorkspaceOperationsMonitor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UnityStyles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\ChangesetsTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\CheckinProgress.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Welcome\WelcomeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\WriteLogConfiguration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetOverlays\Cache\LockStatusCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\Errors\ErrorsListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\SSOCredentialsDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DrawActionHelpBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\UIElements\ProgressControlsForDialogs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Developer\DirectoryConflicts\ConflictResolutionState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\TokenExchangeResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\UpdateReport\ErrorListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DropDownTextField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CollabMigration\MigrateCollabProject.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\UnityIncomingChangesTree.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\TestingHelpData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\TreeHeaderSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\LoadAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DrawActionToolbar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Tool\LaunchInstaller.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\ValidRepositoryName.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\ResponseType.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\DateFilter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\PlasticNotification.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoriesListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\SignInWithEmailPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\CloseWindowIfOpened.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CredentialsUIImpl.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Branch\BranchesListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\DrawIncomingChangesOverview.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportLineListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingChangesMultiColumnHeader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\Processor\PlasticAssetsProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\DrawCreateWorkspaceView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\DrawGuiModeSwitcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CheckWorkspaceTreeNodeStatus.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\ChangesetsListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\ViewSwitcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\DrawActionButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\EditorWindowFocus.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\ShowWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\CooldownWindowDelayer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\CreateWorkspaceView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\HistoryListViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\SaveAssets.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\EditorProgressControls.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\PendingMergeLinks\MergeLinksListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\ProgressControlsForDialogs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\Changesets\ChangesetListViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\HelpLink.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\ConfirmContinueWithPendingChangesDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\ApplicationDataPath.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Progress\DrawProgressForOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CollabMigration\MigrationProgressRender.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Tool\FindTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CloudProjectDownloader\ParseArguments.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\CloudProjectDownloader\CommandLineArguments.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoryExplorerDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetsUtils\GetSelectedPaths.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Help\HelpLinkData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\EncryptionConfigurationDialog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\AssetMenu\AssetsSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\PendingChanges\ChangeCategoryTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UnityConfigurationChecker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\CreateWorkspace\CreateWorkspaceViewState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\OrganizationPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WorkspaceWindow.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\DownloadPlasticExeWindow.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\WaitingSignInPanel.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\TabView.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\ProgressControlsForDialogs.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\WaitingSignInPanel.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\SignInWithEmailPanel.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\PlasticWindow\PlasticWindow.light.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\SignInSignUp.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\SSOSignUpPanel.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\SignInWithEmailPanel.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\CreateOrganizationPanel.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\OrganizationPanel.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\CreateOrganizationPanel.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\TeamEditionConfigurationWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\OrganizationPanel.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\SignInPanel.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\CreatedOrganizationPanel.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\PlasticWindow\StatusBar.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\SignInPanel.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\TabView.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\CreatedOrganizationPanel.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Unity.PlasticSCM.Editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\TeamEditionConfigurationWindow.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\DownloadPlasticExeWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\PlasticWindow\PlasticWindow.dark.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\SSOSignUpPanel.uxml" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Styles\PlasticWindow\PlasticWindow.uss" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Assets\Layouts\ProgressControlsForDialogs.uxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -200,6 +456,9 @@
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
@@ -372,14 +631,23 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -758,101 +1026,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{E6896FC2-C256-38EB-019A-28D14ADD5920}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{A359B327-FBB7-8226-47B9-9D80CAAA1739}</Project>
-      <Name>Unity.VisualScripting.Flow.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{CE8C6BA4-E9F5-8746-20DC-B20DCD78F738}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{64E9B9C8-1901-365E-1E9E-C4C39CBE4D20}</Project>
-      <Name>Unity.VisualScripting.Shared.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{FED416DF-7967-8A2D-BA40-38D66B8A1F1A}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{AB9443A2-2C5C-29A4-4376-8F8952150C5D}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
-      <Project>{FA01C333-62B7-04B5-A308-11C48F310E5F}</Project>
-      <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
-      <Project>{7355700C-CE4B-F5E6-C732-02D6E440E5BA}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{73059031-C75C-93DF-20D8-D7DD93D2EF1D}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{E156B910-EEBB-585B-3821-417059A03FFB}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{CA2ABB57-A26E-C99A-A034-DFB8DBC83637}</Project>
-      <Name>Unity.VisualScripting.Core.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{17333472-E40A-386E-2318-0665ACA602FF}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{6E31611A-5477-D7B2-41DE-AC50488740A4}</Project>
-      <Name>Unity.VisualScripting.State.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{ADA099B2-47CA-265A-A8E6-89E1C95B6EBD}</Project>
-      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
-      <Project>{83A7928E-F625-F164-AF74-5C91BFCBA340}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{207975E9-E1B6-B7E5-F748-C843DA753700}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{DBAA7C29-E768-5682-0BB2-77BF9A21B859}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{2174CB39-E6AF-593E-F0AC-8E7CDBA93218}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{AAFD5BC5-56ED-2790-1269-1ADAB5EBDC74}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
-      <Project>{D77FFC05-BBB7-5238-549B-A02703468E55}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{D3E68B37-90E7-31C3-B3AD-A6B5660F13A8}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{B9B56E57-398C-EE30-62EA-A65D6B0D778A}</Project>
-      <Name>Unity.VisualScripting.State</Name>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{78A75F1E-C336-C8E4-8C4C-BD54BDFC4C44}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{DB15AE32-C11A-874A-4D2D-7E71E9A364CC}</Project>
-      <Name>Unity.VisualScripting.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{D3CE4CBA-C507-5FB1-5CEB-545EE2A672AD}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{F741EB64-9370-197C-4BDA-ABCB7C5A6BCA}</Project>
+      <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
